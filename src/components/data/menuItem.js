@@ -1,58 +1,54 @@
 export  const  MenuItemsOne = [
 
     {
-        icon:"fa-minus-square",
+        icon:"fa fa-house",
         link:"/",
         name:"Home"
     },
     {
-        icon:"fa-tachometer",
-        link:"/",
-        name:"Profile"
+        icon:"fa-solid fa-suitcase",
+        link:"/src/components/Jobs/Jobs.jsx",
+        name:"Jobs"
     },
     {
-        icon:"fa-building",
+        icon:"fa-solid fa-file",
         link:"/",
-        name:"Profile"
+        name:"Resume"
     },
     {
-        icon:"fa-bars",
+        icon:"fa-solid fa-check",
         link:"/",
-        name:"Profile"
+        name:"Tasks"
     },
     {
-        icon:"fa-cutlery",
+        icon:"fa-regular fa-circle",
         link:"/",
-        name:"Profile"
+        name:"Calender"
     },
 ];
 export  const  MenuItemsTwo = [
 
     {
-        icon:"fa-user-circle",
+        icon:"fa-solid fa-user-group",
         link:"/",
-        name:"admin"
+        name:"Users"
     },
     {
-        icon:"fa-money-bill",
+        icon:"fa-solid fa-location-pin",
         link:"/",
-        name:"admin"
+        name:"Location"
     },
     {
-        icon:"fa-tasks",
+        icon:"fa-solid fa-diagram-project",
         link:"/",
-        name:"admin"
+        name:"Project"
     },
     {
-        icon:"fa-bars",
+        icon:"fa-solid fa-chart-pie",
         link:"/",
-        name:"admin"
+        name:"Reports"
     },
-    {
-        icon:"fa-file-text",
-        link:"/",
-        name:"admin"
-    },
+   
     // {
     //     icon:"fa-power-off",
     //     link:"/",

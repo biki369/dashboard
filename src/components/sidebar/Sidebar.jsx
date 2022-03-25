@@ -8,7 +8,7 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
             <div className='sidebar__title'>
                 <div className='sidebar__img'>
                     <img src={logo} alt="logo" />
-                    <h1>Teacher</h1>
+                    <h1>Username</h1>
                 </div>
 
                 <i 
@@ -20,10 +20,7 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
             </div>
 
             <div className="sidebar__menu">
-                <div className="sidebar__link active_menu_link">
-                    <i className="fa fa-minus-square"></i>
-                    <a href="#">Home</a>
-                </div>
+                
                 <h2>Home</h2>
                  {
                      MenuItemsOne.map((elm,index) =>(
