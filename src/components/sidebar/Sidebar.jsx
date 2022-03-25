@@ -1,9 +1,15 @@
+
+import React from 'react'
+import { Link, NavLink } from 'react-router-dom';
 import logo from '../../assets/logo.png';
 import { MenuItemsOne, MenuItemsTwo } from '../data/menuItem';
 import './Sidebar.css';
 
 const Sidebar = ({ sidebarOpen, closeSidebar }) => {
-    return(
+
+    // const [active, isActive] = React.useState(true);
+
+    return (
         <div className={sidebarOpen ? 'sidebar-responsive' : ''} id="sidebar">
             <div className='sidebar__title'>
                 <div className='sidebar__img'>
@@ -11,42 +17,48 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
                     <h1>Teacher</h1>
                 </div>
 
-                <i 
-                onClick={() => closeSidebar()}
-                className="fa fa-times"
-                id="sidebarIcon"
-                aria-hidden="true"
+                <i
+                    onClick={() => closeSidebar()}
+                    className="fa fa-times"
+                    id="sidebarIcon"
+                    aria-hidden="true"
                 ></i>
             </div>
 
             <div className="sidebar__menu">
-                <div className="sidebar__link active_menu_link">
+                <Link to="/" className="sidebar__link active_menu_link">
                     <i className="fa fa-minus-square"></i>
-                    <a href="#">Home</a>
-                </div>
+                    <span className="link-name">Home</span>
+                </Link>
                 <h2>Home</h2>
-                 {
-                     MenuItemsOne.map((elm,index) =>(
-                        <div className="sidebar__link" key={index}>
-                        <i className={`fa ${elm.icon}`}></i>
-                        <a href={elm.link}>{elm.name}</a>
-                    </div>
-                     ))
-                 }
+                {
+                    MenuItemsOne.map((elm, index) => (
+                        <>
+                            <NavLink to={elm.link} className={({ isActive }) => (isActive ? 'sidebar__link active_menu_link' : 'sidebar__link')} key={index}>
+                                <i className={`fa ${elm.icon}`}></i>
+                                <span className="link-name">{elm.name}</span>
+                            </NavLink>
+                        </>
+                    ))
+                }
 
                 <h2>Admin</h2>
-                 {
-                      MenuItemsTwo.map((elm,index) =>(
-                        <div className="sidebar__link" key={index}>
-                        <i className={`fa ${elm.icon}`}></i>
-                        <a href={elm.link}>{elm.name}</a>
-                    </div>
-                     )) 
-                 }
-                 <div className="sidebar__logout">
+                {
+                    MenuItemsTwo.map((elm, index) => (
+
+                        <>
+                            <NavLink to={elm.link} className={({ isActive }) => (isActive ? 'sidebar__link active_menu_link' : 'sidebar__link')} key={index}>
+                                <i className={`fa ${elm.icon}`}></i>
+                                <span className="link-name">{elm.name}</span>
+                            </NavLink>
+                        </>
+                    ))
+                }
+
+                <Link to="/" className="sidebar__logout">
                     <i className="fa fa-power-off"></i>
-                    <a href="#">Log out</a>
-                </div>
+                    <span className="link-name">Log out</span>
+                </Link>
             </div>
 
         </div>

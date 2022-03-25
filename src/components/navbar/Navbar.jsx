@@ -9,9 +9,9 @@ const Navbar = ({ sidebarOpen, openSidebar }) => {
             </div>
 
             <div className="navbar__left">
-                <a href="#">Products</a>
+                <a href="#" className="active_link">Home</a>
                 <a href="#">Edit</a>
-                <a href="#" className="active_link">Admin</a>
+                <a href="#">Admin</a>
             </div>
 
             <div className="navbar__right">

@@ -13,6 +13,11 @@ const App = () => {
   const closeSidebar = () => {
     setSidebarOpen(false)
   }
+
+  document.addEventListener("mousedown", (event) => {
+      setSidebarOpen(false)
+
+  });
  
   return (
     <div className="container">

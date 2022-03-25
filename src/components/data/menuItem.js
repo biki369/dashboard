@@ -1,57 +1,58 @@
-export  const  MenuItemsOne = [
+export const MenuItemsOne = [
 
     {
-        icon:"fa-minus-square",
-        link:"/",
-        name:"Home"
+        icon: "fa-minus-square",
+        link: "",
+        name: "Home"
     },
     {
-        icon:"fa-tachometer",
-        link:"/",
-        name:"Profile"
+        icon: "fa-tachometer",
+        link: "home",
+        name: "Profile"
     },
     {
-        icon:"fa-building",
-        link:"/",
-        name:"Profile"
+        icon: "fa-building",
+        link: "edit",
+        name: "Profile"
     },
     {
-        icon:"fa-bars",
-        link:"/",
-        name:"Profile"
+        icon: "fa-bars",
+        link: "teacher",
+        name: "Profile"
     },
     {
-        icon:"fa-cutlery",
-        link:"/",
-        name:"Profile"
+        icon: "fa-cutlery",
+        link: "find",
+        name: "Profile"
     },
 ];
-export  const  MenuItemsTwo = [
+
+export const MenuItemsTwo = [
 
     {
-        icon:"fa-user-circle",
-        link:"/",
-        name:"admin"
+        icon: "fa-user-circle",
+        link: "hom2",
+        name: "admin"
     },
     {
-        icon:"fa-money-bill",
-        link:"/",
-        name:"admin"
+        icon: "fa-money-bill",
+        link: "home3",
+        name: "admin"
     },
     {
-        icon:"fa-tasks",
-        link:"/",
-        name:"admin"
+        icon: "fa-tasks",
+        link: "home4",
+        name: "admin"
     },
     {
-        icon:"fa-bars",
-        link:"/",
-        name:"admin"
+        icon: "fa-bars",
+        link: "home5",
+        name: "admin"
     },
     {
-        icon:"fa-file-text",
-        link:"/",
-        name:"admin"
+        icon: "fa-file-text",
+        link: "home6",
+        name: "admin"
     },
     // {
     //     icon:"fa-power-off",
