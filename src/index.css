@@ -63,6 +63,7 @@
 .container {
     display: grid;
     height: 100vh;
+    overflow: hidden;
     grid-template-areas: 
     "sidebar nav nav nav"
     "sidebar main main main";
