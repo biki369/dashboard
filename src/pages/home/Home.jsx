@@ -1,6 +1,6 @@
 import React from 'react'
-import hello from '../../../assets/hello.svg';
-import Charts from '../../charts/Charts'
+import hello from '../../assets/hello.svg';
+import Charts from '../../components/charts/Charts'
 import "./home.css";
 
 

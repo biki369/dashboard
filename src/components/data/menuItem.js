@@ -7,7 +7,7 @@ export const MenuItemsOne = [
     },
     {
         icon: "fa-tachometer",
-        link: "home",
+        link: "profile",
         name: "Profile"
     },
     {

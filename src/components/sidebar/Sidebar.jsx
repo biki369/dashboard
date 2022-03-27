@@ -26,32 +26,31 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
             </div>
 
             <div className="sidebar__menu">
-                <Link to="/" className="sidebar__link active_menu_link">
+                {/* <Link to="/" className="sidebar__link ">
                     <i className="fa fa-minus-square"></i>
-                    <span className="link-name">Home</span>
-                </Link>
-                <h2>Home</h2>
+                    <span className="link-name">Dashboard</span>
+                </Link> */}
+                <h2>Dashboard</h2>
                 {
                     MenuItemsOne.map((elm, index) => (
-                        <>
-                            <NavLink to={elm.link} className={({ isActive }) => (isActive ? 'sidebar__link active_menu_link' : 'sidebar__link')} key={index}>
+                        <div key={index}>
+                            <NavLink to={elm.link} className={({ isActive }) => (isActive ? 'sidebar__link active_menu_link' : 'sidebar__link')}>
                                 <i className={`fa ${elm.icon}`}></i>
                                 <span className="link-name">{elm.name}</span>
                             </NavLink>
-                        </>
+                        </div>
                     ))
                 }
-
-                <h2>Admin</h2>
+                <h2>Quick Menu</h2>
                 {
                     MenuItemsTwo.map((elm, index) => (
 
-                        <>
-                            <NavLink to={elm.link} className={({ isActive }) => (isActive ? 'sidebar__link active_menu_link' : 'sidebar__link')} key={index}>
+                        <div key={index}>
+                            <NavLink to={elm.link} className={({ isActive }) => (isActive ? 'sidebar__link active_menu_link' : 'sidebar__link')}>
                                 <i className={`fa ${elm.icon}`}></i>
                                 <span className="link-name">{elm.name}</span>
                             </NavLink>
-                        </>
+                        </div>
                     ))
                 }
 
