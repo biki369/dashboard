@@ -8,11 +8,11 @@ const Navbar = ({ sidebarOpen, openSidebar }) => {
                 <i className="fa fa-bars" aria-hidden="true"></i>
             </div>
 
-            <div className="navbar__left">
+            {/* <div className="navbar__left">
                 <a href="#">Products</a>
                 <a href="#">Edit</a>
                 <a href="#" className="active_link">Admin</a>
-            </div>
+            </div> */}
 
             <div className="navbar__right">
                 <a href="#">

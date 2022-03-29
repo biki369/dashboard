@@ -18,9 +18,9 @@ const App = () => {
     <div className="container">
       <Navbar sidebarOpen={sidebarOpen} openSidebar={openSidebar}/>
       <Sidebar sidebarOpen={sidebarOpen} closeSidebar={closeSidebar}/>
-      <Main />
+      
     </div>
   )
 }
 
-export default App;
+export default App
