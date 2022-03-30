@@ -15,9 +15,11 @@ const Navbar = ({ sidebarOpen, openSidebar }) => {
             </div> */}
 
             <div className="navbar__right">
-                <a href="#">
-                    <i className="fa fa-search"></i>
-                </a>
+               <div className="search-box">
+                   <input type="text" className="search-txt"name="" placeholder='Type here to search' />
+                   <a href="" className="search-btn"><i className='fa fa-search'></i></a>
+                   
+               </div>
 
                 <a href="#">
                     <i className="fa-solid fa-clock"></i>
