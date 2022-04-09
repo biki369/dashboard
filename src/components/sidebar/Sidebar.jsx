@@ -1,17 +1,11 @@
 import logo from "../../assets/logo.png";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import { MenuItemsOne, MenuItemsTwo } from "../data/menuItem";
+import { MenuItemsOne} from "../data/menuItem";
 import "./Sidebar.css";
-import Jobs from "../SideBarElements/Jobs/Jobs";
-import Calender from "../SideBarElements/Calender/Calender";
-import Tasks from "../SideBarElements/Tasks/Tasks";
-import Users from "../SideBarElements/Users/Users";
-import Reports from "../SideBarElements/Reports/Reports";
-import Projects from "../SideBarElements/Projects/Projects";
-import Location from "../SideBarElements/Location/Location";
-import Resume from "../SideBarElements/Resume/Resume";
-import Home from "../SideBarElements/Home/Home";
-
+import Profile from "../SideBarElements/Profile/Profile";
+import Settings from "../SideBarElements/Settings/Settings";
+import Browse from "../SideBarElements/Browse/Browse";
+import ChangePassword from "../SideBarElements/ChangePassword/ChangePassword";
 const Sidebar = ({ sidebarOpen, closeSidebar }) => {
   return (
     <Router>
@@ -39,13 +33,7 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
             </div>
           ))}
 
-          <h2>Admin</h2>
-          {MenuItemsTwo.map((elm, index) => (
-            <div className="sidebar__link" key={index}>
-              <i className={`fa ${elm.icon}`}></i>
-              <Link to={elm.link}>{elm.name}</Link>
-            </div>
-          ))}
+       
           <div className="sidebar__logout">
             <i className="fa fa-power-off"></i>
             <a href="#">Log out</a>
@@ -54,15 +42,10 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
       </div>
 
       <Routes>
-        <Route path="/Jobs" element={<Jobs />}></Route>
-        <Route path="/Resume" element={<Resume />}></Route>
-        <Route path="/Tasks" element={<Tasks />}></Route>
-        <Route path="/Calender" element={<Calender />}></Route>
-        <Route path="/Users" element={<Users />}></Route>
-        <Route path="/Location" element={<Location />}></Route>
-        <Route path="/Projects" element={<Projects />}></Route>
-        <Route path="/Reports" element={<Reports />}></Route>
-        <Route path="/" element={<Home />}></Route>
+        <Route path="/settings" element={<Settings />}></Route>
+        <Route path="/browse" element={<Browse />}></Route>
+        <Route path="/change-password" element={<ChangePassword />}></Route>
+        <Route path="/" element={<Profile />}></Route>
       </Routes>
     </Router>
   );
