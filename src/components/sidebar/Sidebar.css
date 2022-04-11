@@ -34,9 +34,22 @@
 }
 
 .sidebar__title > i {
+    
     font-size: 18px;
     display: none;
+    
 }
+.sidebar-item{
+    padding: 1em;
+    margin:0.25em;
+    border-radius: 30px;
+    
+}
+.sidebar-item:hover{
+    background-color: green;
+}
+   
+
 
 .sidebar__menu > h2 {
     color: #3ea175;
@@ -48,10 +61,13 @@
 }
 
 .sidebar__link {
-    color: #f3f4f6;
+    color: #fff;
     padding: 10px;
     border-radius: 3px;
     margin-bottom: 5px;
+    width: 20em;
+    z-index:1;
+    list-style: none;
 }
 
 .active_menu_link {
@@ -65,7 +81,7 @@
 
 .sidebar__link > a {
     text-decoration: none;
-    color: #a5aaad;
+    color: #fff;
     font-weight: 700;
 }
 

@@ -26,12 +26,15 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
 
         <div className="sidebar__menu">
           <h2>Home</h2>
+          <ul>
           {MenuItemsOne.map((elm, index) => (
-            <div className="sidebar__link" key={index}>
-              <i className={`fa ${elm.icon}`}></i>
-              <a href={elm.link}>{elm.name}</a>
-            </div>
+            <li className="sidebar__link " key={index}>
+              
+              <a className={`sidebar-item`}href={elm.link}><i className={`fa ${elm.icon}`}> </i> {elm.name}</a>
+            </li>
           ))}
+          </ul>
+         
 
        
           <div className="sidebar__logout">
